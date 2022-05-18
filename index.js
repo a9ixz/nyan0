@@ -77,7 +77,7 @@ for (const token of auth.Tokens) {
         if (_aman == false) return
         console.log(`[${client.user.tag}] send owoh to ${_server.name}`)
         let guild = client.guilds.cache.get(_server.guildId);
-        let channel = guild.channels.cache.get(_server.channelId);
+        let channel = guild.channel.cache.get(_server.channelId);
         channel.send('owoh')
     }, owoh)
 
@@ -85,7 +85,7 @@ for (const token of auth.Tokens) {
     setInterval(() => {
         if (_aman == false) return
         let guild = client.guilds.cache.get(_server.guildId);
-        let channel = guild.channels.cache.get(_server.channelId);
+        let channel = guild.channel.cache.get(_server.channelId);
         channel.send('owob')
     }, owob)
 
