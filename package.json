@@ -4,7 +4,7 @@
   "description": "SERVER",
   "main": "index.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "node index.js"
   },
   "dependencies": {
     "discord.js": "^12.5.1",
