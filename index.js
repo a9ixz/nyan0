@@ -8,7 +8,7 @@ require('dotenv').config()
 const config = require('./config.json')
 let _aman = true
 const auth = require('./token.js')
-
+const prefix = ',';
 // Waktu spam
 var owoh = 30 * 1000 // spam owo hunt
 var owocash = 120 * 1000 // spam owo cash
@@ -113,4 +113,30 @@ process.on("uncaughtExceptionMonitor", (err, origin) => {
 process.on("multipleResolves", (type, promise, reason) => {
     console.log("[antiCrash] :: Multiple Resolves");
     console.log(type, promise, reason);
+});
+
+
+client.on("message", message => {
+  if (message.author.bot) return;
+  if (!message.content.startsWith(prefix)) return;
+
+  if (!message.member.hasPermission("MANAGE_MESSAGES")) return;
+
+  let command = message.content.split(" ")[0];
+  command = command.slice(prefix.length);
+
+  let args = message.content.split(" ").slice(1);
+
+  if (command === "say") {
+    message.delete();
+    message.channel.send(args.join(" ")).catch(console.error);
+  }
+
+  if (command == "embed") {
+    let say = new Discord.MessageEmbed()
+      .setDescription(args.join("  "))
+      .setColor(0x23b2d6);
+    message.channel.send(say);
+    message.delete();
+  }
 });
