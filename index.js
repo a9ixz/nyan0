@@ -2,7 +2,7 @@ console.log("[Logger] Start bot, wait a minute ...")
 const { Client, Intents, MessageEmbed } = require('discord.js-self');
 const Discord = require('discord.js');
 const fs = require('fs');
-require('dotenv').config()
+require('.env').config()
 
 // Settings
 const config = require('./config.json')
