@@ -1,25 +1,45 @@
 {
-  "name": "self",
-  "version": "1.0.0",
-  "description": "Owo farming bot",
+  "name": "ARYAN",
+  "version": "2.1.0",
+  "description": "SERVER",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server.js"
   },
-  "author": "Paiiss",
-  "license": "ISC",
   "dependencies": {
-    "cat-facts": "^1.0.2",
-    "chance": "^1.1.8",
-    "discord.js": "^12.6.4",
+    "discord.js": "^12.5.1",
+    "http": "^0.0.0",
+    "express": "^4.17.1",
     "discord.js-self": "^12.0.4",
-    "discord.js-selfbot": "^12.0.2",
-    "dog-facts": "^1.0.3",
-    "dotenv": "^10.0.0",
-    "hastebin-gen": "^2.0.5",
+    "canvas": "^2.6.1",
+    "hh-mm-ss": "^1.2.0",
+    "youtube-info": "^1.3.2",
+    "simple-youtube-api": "^5.2.1",
     "moment": "^2.29.1",
-    "moment-duration-format": "^2.3.2",
-    "node-cron": "^3.0.0",
-    "superagent": "^6.1.0"
+    "fs": "^0.0.2",
+    "util": "^0.12.3",
+    "gif-search": "^2.0.1",
+    "node-opus": "^0.3.3",
+    "ms": "^2.1.3",
+    "jimp": "^0.16.1",
+    "math-expression-evaluator": "^1.2.22",
+    "snekfetch": "^4.0.4",
+    "guild": "^1.2.2",
+    "dateformat": "^3.0.3",
+    "hastebin-gen": "^2.0.5",
+    "get-youtube-id": "^1.0.1",
+    "pretty-ms": "^7.0.0",
+    "table": "^6.0.2",
+    "node-cmd": "^3.0.0",
+    "enmap": "^5.7.3",
+    "@suldashi/node-opus": "^0.3.5",
+    "quick.db": "^7.1.2",
+    "weather.js": "^0.1.0",
+    "weather": "^1.0.0",
+    "weather-js": "^2.0.0",
+    "config.json": "^0.0.4"
+  },
+  "engines": {
+    "node": "12.x"
   }
 }
